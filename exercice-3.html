@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire de contact</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+    <link rel="stylesheet" href="./assets/css/common.css">
+    <link rel="stylesheet" href="./assets/css/exercice-3.css">
+</head>
+<body>
+    <header>
+        <h1>Formulaire de contact</h1>
+    </header>
+    
+    <main>
+        <form class="contact-form" action="#" method="post">
+        <!-- Informations personnelles -->
+        <fieldset class="personal-info">
+            <legend>Informations personnelles</legend>
+            
+            <div class="radio-group">
+                <label><input type="radio" name="civilite" value="Mlle"> Mlle</label>
+                <label><input type="radio" name="civilite" value="Mme"> Mme</label>
+                <label><input type="radio" name="civilite" value="M"> M</label>
+            </div>
+
+            <div class="form-group">
+                <label for="prenom">Prénom</label>
+                <input type="text" id="prenom" name="prenom" placeholder="Votre prénom">
+            </div>
+
+            <div class="form-group">
+                <label for="nom">Nom<span class="required">*</span></label>
+                <input type="text" id="nom" name="nom" placeholder="Votre nom" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email<span class="required">*</span></label>
+                <input type="email" id="email" name="email" placeholder="Votre adresse mail" required>
+            </div>
+        </fieldset>
+
+        <!-- Message -->
+        <fieldset class="message-section">
+            <legend>Votre message</legend>
+
+            <div class="form-group">
+                <label for="destinataire">Destinataire</label>
+                <select id="destinataire" name="destinataire">
+                    <option value="general">Général</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="sujet">Sujet<span class="required">*</span></label>
+                <input type="text" id="sujet" name="sujet" placeholder="L'objet de votre message" required>
+            </div>
+
+            <div class="form-group">
+                <label for="message">Message<span class="required">*</span></label>
+                <textarea id="message" name="message" placeholder="Saisissez votre message ici" required></textarea>
+            </div>
+
+            <div class="form-group file-upload">
+                <label>Ajouter une pièce jointe</label>
+                <input type="file" id="piece-jointe" name="piece-jointe">
+            </div>
+        </fieldset>
+
+        <!-- Options -->
+        <fieldset class="options-section">
+            <legend>Options</legend>
+
+            <div class="checkbox-group">
+                <label>
+                    <input type="checkbox" name="copie" value="1">
+                    Recevoir une copie du message
+                </label>
+                <label>
+                    <input type="checkbox" name="offres" value="1">
+                    Recevoir nos offres
+                </label>
+            </div>
+
+            <div class="contact-preference">
+                <p>Être contacté par un conseiller</p>
+                <label><input type="radio" name="contact" value="non"> Non</label>
+                <label><input type="radio" name="contact" value="telephone"> Par téléphone</label>
+                <label><input type="radio" name="contact" value="email"> Par Email</label>
+            </div>
+        </fieldset>
+
+        <div class="form-actions">
+            <button type="submit" class="btn-submit">Valider</button>
+            <button type="reset" class="btn-reset">Effacer</button>
+        </div>
+
+        <p class="required-notice"><span class="required">*</span> champs obligatoire</p>
+        </form>
+
+        <a href="index.html" class="return-link">Retour Accueil</a>
+    </main>
+
+    <footer>
+        <hr>
+    </footer>
+</body>
+</html>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulaire de contact</title>
+  <link rel="stylesheet" href="./asset/css/exercice-3.css">
+</head>
+<body>
+<header>
+  <h1>Exercice 3 : Formulaire de contact</h1>
+</header>
+<main>
+  <form action="#" method="post">
+    <fieldset>
+      <legend>Informations personnelles</legend>
+      <div>
+        <label for="civilite_mlle">Mlle</label>
+        <input type="radio" id="civilite_mlle" name="civilite" value="Mlle" />
+        <label for="civilite_mme">Mme</label>
+        <input type="radio" id="civilite_mme" name="civilite" value="Mme" checked />
+        <label for="civilite_mr">M.</label>
+        <input type="radio" id="civilite_mr" name="civilite" value="M." />
+      </div>
+      <div>
+        <label for="prenom">Prénom</label>
+        <input type="text" id="prenom" name="prenom" placeholder="Votre prénom" required />
+      </div>
+      <div>
+        <label for="nom">Nom *</label>
+        <input type="text" id="nom" name="nom" placeholder="Votre nom" required />
+      </div>
+      <div>
+        <label for="email">Email *</label>
+        <input type="email" id="email" name="email" placeholder="Votre adresse mail" required />
+      </div>
+    </fieldset>
+    <fieldset>
+      <legend>Votre message</legend>
+      <div>
+        <label for="destinataire">Destinataire</label>
+        <select id="destinataire" name="destinataire">
+          <option value="general">Général</option>
+        </select>
+      </div>
+      <div>
+        <label for="sujet">Sujet</label>
+        <input type="text" id="sujet" name="sujet" placeholder="L'objet de votre message" required />
+      </div>
+      <div>
+        <label for="message">Message</label>
+        <textarea id="message" name="message" placeholder="Saisissez votre message ici" required></textarea>
+      </div>
+      <div>
+        <label for="piece_jointe">Ajouter une pièce jointe</label>
+        <input type="file" id="piece_jointe" name="piece_jointe" />
+      </div>
+    </fieldset>
+    <fieldset>
+      <legend>Options</legend>
+      <div>
+        <input type="checkbox" id="copie_message" name="options" value="copie_message" />
+        <label for="copie_message">Recevoir une copie du message</label>
+      </div>
+      <div>
+        <input type="checkbox" id="offres" name="options" value="offres" />
+        <label for="offres">Recevoir nos offres</label>
+      </div>
+      <div>
+        <label>Être contacté par un conseiller</label>
+        <input type="radio" id="contact_non" name="contact" value="non" checked />
+        <label for="contact_non">Non</label>
+        <input type="radio" id="contact_tel" name="contact" value="tel" />
+        <label for="contact_tel">Par téléphone</label>
+        <input type="radio" id="contact_email" name="contact" value="email" />
+        <label for="contact_email">Par Email</label>
+      </div>
+    </fieldset>
+    <p>* : champs obligatoire</p>
+    <div>
+      <button type="submit">Valider</button>
+      <button type="reset">Effacer</button>
+    </div>
+  </form>
+  <footer>
+    <a href="index.html">Retour à la page d'accueil</a>
+  </footer>
+</main>
+</body>
+</html>
